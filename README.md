@@ -16,7 +16,7 @@ In order to run this program you'll need Python 2.7 or newer. All files should b
 ## Project Contents
 
 All of these files are required to run the program
-* news-log-analysis.py
+* newslog.py
 * (the database "news", but the course notes don't require it to be submitted here)
 
 ## How to run
@@ -26,7 +26,7 @@ All of these files are required to run the program
 * Open a terminal window
 * Launch the VM using ```vagrant up``` and login using ```vagrant ssh```
 * CD to the /vagrant directory (where you placed the news-log-analysis.py file)
-* Run ```python news-log-analysis.py``` (you may need to use python3 if that's the version you're using)
+* Run ```python newslog.py``` (you may need to use ```python3``` if that's the version you're using)
 
 
 ## Built With
