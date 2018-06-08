@@ -30,6 +30,7 @@ All of these files are required to run the program
 * Make sure you're in the right directory, and logged in (from the steps 1-4 above)
 * Run the command ```psql -d news``` to get into the database
 * Create the view using ```create view perc_error as select date(time),round(100.0*sum(case log.status when '200 OK then 0 else 1 end')/count(log.status),2) as "Error Percent" from log group by date(time)order by "Error Percent" desc;``` 
+* Disconnect from the DB
 7. Run ```python newslog.py``` (you may need to use ```python3``` if that's the version you're using)
 
 ## Built With
